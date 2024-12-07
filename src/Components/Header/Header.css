@@ -1,0 +1,126 @@
+/* Estilização para o cabeçalho */
+.header {
+  top: 0; /* Posiciona no topo */
+  left: 0; /* Alinha à esquerda */
+  width: 100%; /* Ocupa toda a largura */
+  padding: 1rem 5rem; /* Espaçamento interno (topo/inferior e laterais) */
+  display: flex; /* Exibe os itens em linha */
+  justify-content: space-between; /* Espaça os itens igualmente */
+  align-items: center; /* Alinha os itens verticalmente */
+  z-index: 100; /* Garante que o cabeçalho fique sobreposto */
+  background-color: #030712; /* Cor de fundo */
+}
+
+/* Estilização do elemento nav (navegação) */
+nav {
+  display: flex; /* Itens em linha */
+}
+
+/* Estilização para lista não ordenada */
+ul {
+  list-style: none; /* Remove os marcadores padrão */
+  margin: 0; /* Remove margens */
+  padding: 0; /* Remove preenchimento */
+  display: flex; /* Exibe itens em linha */
+}
+
+/* Estilização dos itens da lista */
+li {
+  margin-right: 2rem; /* Espaçamento entre os itens */
+  display: flex; /* Itens em linha */
+  align-items: center; /* Alinha itens verticalmente */
+}
+
+/* Links na navegação */
+nav a {
+  text-decoration: none; /* Remove sublinhado */
+  color: #fff; /* Cor do texto */
+  font-weight: 600; /* Peso da fonte */
+  font-size: 1rem; /* Tamanho do texto */
+}
+
+/* Divisores visuais */
+.divisor {
+  width: 0.125rem; /* Largura da linha */
+  height: 100%; /* Altura total */
+  background-color: #ccc; /* Cor do divisor */
+  margin: 0 0.625rem; /* Espaçamento horizontal */
+  display: inline-block; /* Exibição em linha */
+}
+
+/* Menu móvel inicialmente oculto */
+.mobile-menu {
+  display: none; /* Não exibe no layout padrão */
+}
+
+/* Estilização para telas menores */
+@media (max-width: 768px) {
+  nav.open {
+    align-items: end; /* Alinha itens ao final */
+    display: flex; /* Exibe itens */
+  }
+
+  nav {
+    background-color: #1d1d1d; /* Fundo do menu móvel */
+    display: none; /* Oculta por padrão */
+    flex-direction: column; /* Exibe itens em coluna */
+    height: 100%; /* Altura total da tela */
+    padding: 2.3125rem; /* Espaçamento interno */
+    position: fixed; /* Fixa na tela */
+    right: 0; /* Alinha à direita */
+    top: 0; /* Fixa no topo */
+    width: 100%; /* Ocupa toda a largura */
+    z-index: 100; /* Mantém sobreposto */
+  }
+
+  nav ul {
+    flex-direction: column; /* Lista em coluna */
+    width: 100%; /* Ocupa toda a largura */
+  }
+
+  nav ul li {
+    display: flex; /* Exibe itens em linha */
+  }
+
+  nav a {
+    color: #d1d5db; /* Cor do texto */
+    font-weight: 500; /* Peso do texto */
+    font-size: 1.25rem; /* Tamanho maior do texto */
+    line-height: 1.5rem; /* Altura da linha */
+    margin: 0 0 0.9375rem 0; /* Margem inferior */
+    padding: 0.3125rem; /* Espaçamento interno */
+    text-decoration: none; /* Remove sublinhado */
+    width: 6.25rem; /* Largura padrão do link */
+  }
+
+  .mobile-menu {
+    display: flex; /* Exibe menu móvel */
+  }
+
+  .mobile-container {
+    justify-content: space-between; /* Itens nas extremidades */
+    align-items: center; /* Centraliza itens verticalmente */
+    padding: 0 1rem; /* Espaçamento interno horizontal */
+  }
+
+  .mobile-menu img {
+    max-height: 2.5rem; /* Limita a altura da logo */
+  }
+
+  .close-btn {
+    cursor: pointer; /* Altera o cursor ao passar */
+    background: none; /* Remove o fundo */
+    border: none; /* Remove bordas */
+    color: white; /* Cor do texto */
+    font-size: 1.5625rem; /* Tamanho do ícone */
+    padding: 0.75rem; /* Espaçamento interno */
+  }
+
+  .divisor {
+    width: 100%; /* Largura total */
+    height: 0.125rem; /* Altura da linha */
+    background-color: #1f2937; /* Cor do divisor */
+    margin: 0.625rem auto; /* Margem automática para centralizar */
+    margin-bottom: 1.875rem; /* Espaçamento inferior */
+  }
+}
