@@ -1,5 +1,5 @@
 import './Header.css'
-import GM from '../../assets/Icons/gm-white.svg'
+import GM from '../../assets/Icons/Icom-Gm-White.svg'
 import { Link } from 'react-router'
 import Button from '../Button/Button'
 import { useState } from 'react'

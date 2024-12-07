@@ -1,0 +1,92 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 5rem; /* Espaçamento interno */
+  background-color: #030712; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+}
+
+.hero-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between; /* Alinha texto e imagem */
+}
+
+.hero-column {
+  flex: 1;
+  min-width: 18.75rem; /* 300px convertido para rem */
+}
+
+.hero-text-column {
+  text-align: left; /* Texto alinhado à esquerda */
+}
+
+.hero-text {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.hero-description {
+  color: #aaa; /* Texto com contraste menor */
+}
+
+.hero-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25rem; /* 400px convertido para rem */
+  border-radius: 0.5rem; /* 8px convertido para rem */
+}
+
+.hero-image-container img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 0.5rem; /* Estilo consistente */
+}
+
+.hero-location {
+  margin-top: 3rem; /* 50px convertido para rem */
+}
+
+.hero-social-midia {
+  margin-top: 3.125rem; /* 50px convertido para rem */
+}
+
+/* Responsividade para dispositivos com largura máxima de 768px */
+@media (max-width: 48rem) {
+  .hero-container {
+    padding: 1rem 2rem; /* Reduz o padding */
+  }
+
+  .hero-row {
+    flex-direction: column; /* Empilha os elementos verticalmente */
+  }
+
+  .hero-image-container {
+    order: -1; /* Move a imagem para o topo */
+    width: 100%; /* Garante que a imagem ocupe toda a largura */
+    margin-bottom: 1.5rem; /* Espaçamento abaixo da imagem */
+  }
+
+  .hero-text-column {
+    order: 1; /* Garante que o texto fique abaixo */
+    width: 100%; /* O texto ocupa toda a largura */
+    text-align: justify; /* Centraliza o texto */
+  }
+
+  .hero-text {
+    font-size: 1.5rem; /* Reduz o tamanho do texto principal */
+  }
+  .hero-text img {
+    width: 40px !important;
+  }
+
+  .hero-location,
+  .hero-social-midia {
+    margin-top: 2rem; /* Ajusta o espaçamento superior */
+  }
+}
