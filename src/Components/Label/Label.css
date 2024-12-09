@@ -1,0 +1,11 @@
+span {
+  background-color: #374151;
+  border-radius: 12px;
+  padding: 4px 20px;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  display: inline-block; /* Garante que o tamanho acompanhe o conteúdo */
+  color: #d1d5db;
+}

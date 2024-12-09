@@ -5,6 +5,11 @@ import Button from '../Button/Button'
 import { useState } from 'react'
 
 function Header() {
+  const Download = () => {
+    const url = 'https://www.google.com.br' // Certifique-se de incluir 'https://' ou 'http://'
+    window.open(url, '_blank') // '_blank' abre em uma nova aba
+  }
+
   const [isOpen, SetisOpen] = useState(false)
   const toggleMenu = () => {
     SetisOpen(!isOpen)
@@ -45,7 +50,9 @@ function Header() {
             </li>
             <div className="divisor"></div>
             <li>
-              <Button buttonStyle="black">DOWNLOAD CV</Button>
+              <Button buttonStyle="black" onClick={Download}>
+                DOWNLOAD CV
+              </Button>
             </li>
           </ul>
         </nav>

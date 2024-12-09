@@ -1,0 +1,86 @@
+.about-container {
+  display: flex;
+  flex-direction: column; /* Define o layout como uma coluna */
+  padding: 2rem 5rem; /* Espaçamento interno */
+  background-color: #111827; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+}
+
+.about-label {
+  margin: 0 auto; /* Centraliza horizontalmente */
+  margin-bottom: 3.125rem; /* Espaçamento inferior (50px convertido para rem) */
+  text-align: center; /* Alinha o texto ao centro */
+  display: block; /* Garante que o elemento seja tratado como um bloco */
+}
+
+.about-row {
+  display: flex;
+  flex-direction: row; /* Define o layout como uma linha */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: space-between; /* Espaço igual entre os itens */
+  gap: 2rem; /* Espaçamento entre os itens */
+}
+
+.about-column {
+  flex: 1; /* Define que a coluna ocupa o mesmo espaço que suas pares */
+}
+
+.about-image-container {
+  display: flex;
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: center; /* Alinha os itens horizontalmente ao centro */
+  min-height: 18.75rem; /* Altura mínima (300px convertido para rem) */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+.about-image-container img {
+  width: 800px; /* Largura fixa */
+  height: 880px; /* Altura fixa */
+  object-fit: cover; /* Ajusta o conteúdo da imagem */
+  max-width: 100%; /* Garante que não ultrapasse o container */
+  max-height: 100%;
+}
+
+.about-text-column {
+  display: flex;
+  flex-direction: column; /* Define o layout como uma coluna */
+  justify-content: center; /* Alinha os itens verticalmente ao centro */
+  padding: 1rem; /* Espaçamento interno */
+}
+
+.about-text-title {
+  font-size: 2rem; /* Tamanho da fonte do título */
+  margin-bottom: 1rem; /* Espaçamento inferior */
+}
+
+.about-text-description {
+  font-size: 1.125rem; /* Tamanho da fonte da descrição */
+}
+
+/* Estilos responsivos para telas com largura de até 768px */
+@media (max-width: 48rem) {
+  .about-container {
+    padding: 1.5rem 2rem; /* Ajusta o espaçamento interno para telas menores */
+  }
+
+  .about-row {
+    flex-direction: column; /* Altera o layout para coluna em telas pequenas */
+    gap: 1.5rem; /* Reduz o espaçamento entre os itens */
+  }
+
+  .about-label {
+    margin-bottom: 2rem; /* Ajusta o espaçamento inferior */
+  }
+
+  .about-image-container {
+    min-height: 15rem; /* Reduz a altura mínima para telas menores */
+  }
+
+  .about-text-title {
+    font-size: 1.75rem; /* Reduz o tamanho da fonte do título */
+  }
+
+  .about-text-description {
+    font-size: 16px; /* Reduz o tamanho da fonte da descrição */
+  }
+}

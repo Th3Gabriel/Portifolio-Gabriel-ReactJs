@@ -10,7 +10,7 @@
 
 .button.black {
   background-color: #ffffff;
-  color: #030712;
+  color: #030712 !important;
 }
 .button.black:hover {
   background-color: #030712;
