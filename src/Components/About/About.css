@@ -37,6 +37,7 @@
   width: 800px; /* Largura fixa */
   height: 880px; /* Altura fixa */
   object-fit: cover; /* Ajusta o conteúdo da imagem */
+  border-radius: 14px;
   max-width: 100%; /* Garante que não ultrapasse o container */
   max-height: 100%;
 }
