@@ -58,7 +58,7 @@
 }
 
 /* Estilos responsivos para telas com largura de até 768px */
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
   .about-container {
     padding: 1.5rem 2rem; /* Ajusta o espaçamento interno para telas menores */
   }
@@ -68,19 +68,74 @@
     gap: 1.5rem; /* Reduz o espaçamento entre os itens */
   }
 
+  .about-image-container {
+    order: -1; /* Coloca a imagem antes do texto */
+    min-height: 15rem; /* Reduz a altura mínima para telas menores */
+  }
+
   .about-label {
     margin-bottom: 2rem; /* Ajusta o espaçamento inferior */
   }
 
-  .about-image-container {
-    min-height: 15rem; /* Reduz a altura mínima para telas menores */
-  }
-
   .about-text-title {
-    font-size: 1.75rem; /* Reduz o tamanho da fonte do título */
+    font-size: 16px; /* Reduz o tamanho da fonte do título */
+    line-height: 20px;
   }
 
   .about-text-description {
-    font-size: 16px; /* Reduz o tamanho da fonte da descrição */
+    font-size: 12px; /* Reduz o tamanho da fonte da descrição */
+  }
+
+  .about-image-container img {
+    width: 100%; /* Adapta largura à tela */
+    height: auto; /* Ajusta altura automaticamente */
+  }
+}
+
+/* Estilos responsivos para telas entre 768px e 1024px (tablets e pequenos desktops) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-container {
+    padding: 2rem 3rem; /* Ajusta o espaçamento interno */
+  }
+
+  .about-row {
+    gap: 1.75rem; /* Ajusta o espaçamento entre os itens */
+  }
+
+  .about-image-container img {
+    width: 600px; /* Reduz largura da imagem */
+    height: 660px; /* Reduz altura da imagem */
+  }
+}
+
+/* Estilos responsivos para telas entre 1024px e 1280px (desktops padrão) */
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .about-container {
+    padding: 2rem 4rem; /* Ajusta o espaçamento interno */
+  }
+
+  .about-row {
+    gap: 2rem; /* Mantém espaçamento entre os itens */
+  }
+
+  .about-image-container img {
+    width: 700px; /* Ajusta largura da imagem */
+    height: 770px; /* Ajusta altura da imagem */
+  }
+}
+
+/* Estilos para telas maiores que 1280px (desktops grandes e ultrawide) */
+@media (min-width: 1280px) {
+  .about-container {
+    padding: 2rem 5rem; /* Mantém espaçamento interno */
+  }
+
+  .about-row {
+    gap: 2.5rem; /* Aumenta o espaçamento entre os itens */
+  }
+
+  .about-image-container img {
+    width: 800px; /* Tamanho original da imagem */
+    height: 880px; /* Tamanho original da imagem */
   }
 }

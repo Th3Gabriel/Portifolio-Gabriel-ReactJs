@@ -1,126 +1,211 @@
 /* Estilização para o cabeçalho */
 .header {
-  top: 0; /* Posiciona no topo */
-  left: 0; /* Alinha à esquerda */
-  width: 100%; /* Ocupa toda a largura */
-  padding: 1rem 5rem; /* Espaçamento interno (topo/inferior e laterais) */
-  display: flex; /* Exibe os itens em linha */
-  justify-content: space-between; /* Espaça os itens igualmente */
-  align-items: center; /* Alinha os itens verticalmente */
-  z-index: 100; /* Garante que o cabeçalho fique sobreposto */
-  background-color: #030712; /* Cor de fundo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: #030712;
 }
 
 /* Estilização do elemento nav (navegação) */
 nav {
-  display: flex; /* Itens em linha */
+  display: flex;
 }
 
 /* Estilização para lista não ordenada */
 ul {
-  list-style: none; /* Remove os marcadores padrão */
-  margin: 0; /* Remove margens */
-  padding: 0; /* Remove preenchimento */
-  display: flex; /* Exibe itens em linha */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 /* Estilização dos itens da lista */
 li {
-  margin-right: 2rem; /* Espaçamento entre os itens */
-  display: flex; /* Itens em linha */
-  align-items: center; /* Alinha itens verticalmente */
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 /* Links na navegação */
 nav a {
-  text-decoration: none; /* Remove sublinhado */
-  color: #fff; /* Cor do texto */
-  font-weight: 600; /* Peso da fonte */
-  font-size: 1rem; /* Tamanho do texto */
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 /* Divisores visuais */
 .divisor {
-  width: 0.125rem; /* Largura da linha */
-  height: 100%; /* Altura total */
-  background-color: #ccc; /* Cor do divisor */
-  margin: 0 0.625rem; /* Espaçamento horizontal */
-  display: inline-block; /* Exibição em linha */
+  width: 0.125rem;
+  height: 100%;
+  background-color: #ccc;
+  margin: 0 0.625rem;
+  display: inline-block;
 }
 
 /* Menu móvel inicialmente oculto */
 .mobile-menu {
-  display: none; /* Não exibe no layout padrão */
+  display: none;
 }
 
-/* Estilização para telas menores */
+/* Estilização para telas menores que 768px */
 @media (max-width: 768px) {
   nav.open {
-    align-items: end; /* Alinha itens ao final */
-    display: flex; /* Exibe itens */
+    align-items: end;
+    display: flex;
   }
 
   nav {
-    background-color: #1d1d1d; /* Fundo do menu móvel */
-    display: none; /* Oculta por padrão */
-    flex-direction: column; /* Exibe itens em coluna */
-    height: 100%; /* Altura total da tela */
-    padding: 2.3125rem; /* Espaçamento interno */
-    position: fixed; /* Fixa na tela */
-    right: 0; /* Alinha à direita */
-    top: 0; /* Fixa no topo */
-    width: 100%; /* Ocupa toda a largura */
-    z-index: 100; /* Mantém sobreposto */
+    background-color: #1d1d1d;
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    padding: 2.3125rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
   }
 
   nav ul {
-    flex-direction: column; /* Lista em coluna */
-    width: 100%; /* Ocupa toda a largura */
+    flex-direction: column;
+    width: 100%;
   }
 
   nav ul li {
-    display: flex; /* Exibe itens em linha */
+    display: flex;
   }
 
   nav a {
-    color: #d1d5db; /* Cor do texto */
-    font-weight: 500; /* Peso do texto */
-    font-size: 1.25rem; /* Tamanho maior do texto */
-    line-height: 1.5rem; /* Altura da linha */
-    margin: 0 0 0.9375rem 0; /* Margem inferior */
-    padding: 0.3125rem; /* Espaçamento interno */
-    text-decoration: none; /* Remove sublinhado */
-    width: 6.25rem; /* Largura padrão do link */
+    color: #d1d5db;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin: 0 0 0.9375rem 0;
+    padding: 0.3125rem;
+    text-decoration: none;
+    width: 6.25rem;
   }
 
   .mobile-menu {
-    display: flex; /* Exibe menu móvel */
+    display: flex;
   }
 
   .mobile-container {
-    justify-content: space-between; /* Itens nas extremidades */
-    align-items: center; /* Centraliza itens verticalmente */
-    padding: 0 1rem; /* Espaçamento interno horizontal */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
   }
 
   .mobile-menu img {
-    max-height: 2.5rem; /* Limita a altura da logo */
+    max-height: 2.5rem;
   }
 
   .close-btn {
-    cursor: pointer; /* Altera o cursor ao passar */
-    background: none; /* Remove o fundo */
-    border: none; /* Remove bordas */
-    color: white; /* Cor do texto */
-    font-size: 1.5625rem; /* Tamanho do ícone */
-    padding: 0.75rem; /* Espaçamento interno */
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5625rem;
+    padding: 0.75rem;
   }
 
   .divisor {
-    width: 100%; /* Largura total */
-    height: 0.125rem; /* Altura da linha */
-    background-color: #1f2937; /* Cor do divisor */
-    margin: 0.625rem auto; /* Margem automática para centralizar */
-    margin-bottom: 1.875rem; /* Espaçamento inferior */
+    width: 100%;
+    height: 0.125rem;
+    background-color: #1f2937;
+    margin: 0.625rem auto;
+    margin-bottom: 1.875rem;
+  }
+}
+
+/* Estilização para telas maiores que 768px */
+@media (min-width: 769px) {
+  .mobile-menu {
+    display: none; /* Esconde menu móvel */
+  }
+
+  nav {
+    display: flex; /* Reexibe o menu padrão */
+    flex-direction: row;
+    position: static;
+    background-color: transparent;
+    height: auto;
+    padding: 0;
+    width: auto;
+  }
+
+  nav ul {
+    flex-direction: row;
+    width: auto;
+  }
+
+  nav ul li {
+    margin-right: 2rem;
+  }
+
+  nav a {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .divisor {
+    display: inline-block;
+    width: 0.125rem;
+    height: 100%;
+    margin: 0 0.625rem;
+    background-color: #ccc;
+  }
+}
+
+/* Estilização para telas entre 768px e 1024px (tablets e pequenos desktops) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+
+  nav ul li {
+    margin-right: 1.5rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Estilização para telas entre 1024px e 1280px (desktops padrão) */
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .header {
+    padding: 1rem 3rem;
+  }
+
+  nav ul li {
+    margin-right: 1.75rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+}
+
+/* Estilização para telas maiores que 1280px */
+@media (min-width: 1280px) {
+  .header {
+    padding: 1rem 5rem;
+  }
+
+  nav ul li {
+    margin-right: 2rem;
+  }
+
+  nav a {
+    font-size: 1.1rem;
   }
 }
