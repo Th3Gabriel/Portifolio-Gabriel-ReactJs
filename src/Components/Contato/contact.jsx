@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import './contact.css'
 import Label from '../Label/Label'
 import IconCopiar from '../../assets/Icons/Icon-copy.svg'
@@ -6,13 +7,23 @@ import GitHub from '../../assets/Icons/Icon-GitHub.svg'
 import Linkedin from '../../assets/Icons/Icon-Linkedin.svg'
 
 function Contact() {
-  // Função para copiar o e-mail para a área de transferência
+  const [tooltip, setTooltip] = useState('') // Estado para controlar o texto exibido
+
+  const handleMouseOver = () => {
+    setTooltip('Copiar email') // Exibe o texto ao passar o mouse
+  }
+
+  const handleMouseOut = () => {
+    setTooltip('') // Remove o texto ao tirar o mouse
+  }
+
   const handleCopyEmail = () => {
     const email = 'gabrielmartins1955@hotmail.com'
     navigator.clipboard
       .writeText(email)
       .then(() => {
-        alert('E-mail copiado para a área de transferência!')
+        setTooltip('Email na área de transferência') // Atualiza o texto após copiar
+        setTimeout(() => setTooltip(''), 2000) // Remove o texto após 2 segundos
       })
       .catch((err) => {
         console.error('Erro ao copiar o e-mail: ', err)
@@ -37,27 +48,24 @@ function Contact() {
           <div className="contact">
             <img src={IconEmail} alt="contact-email" />
             <p>gabrielmartins1955@hotmail.com</p>
-            <a
-              href="#"
+            <div
+              className="icon-wrapper"
+              onMouseOver={handleMouseOver}
+              onMouseOut={handleMouseOut}
               onClick={(e) => {
                 e.preventDefault()
                 handleCopyEmail()
               }}
             >
               <img src={IconCopiar} alt="contact-IconCopiar" />
-            </a>
+              {tooltip && <span className="tooltip">{tooltip}</span>}
+            </div>
           </div>
         </div>
         <div className="contact-minimal-infos">
           <p>Você também pode me encontrar nessas plataformas!</p>
           <div className="contact-minsocial">
-            <div
-              className="hero-social-midia"
-              style={{
-                display: 'flex',
-                gap: '5px',
-              }}
-            >
+            <div className="hero-social-midia">
               <a href="https://github.com/Th3Gabriel/Th3Gabriel">
                 <img src={GitHub} alt="Ícone do GitHub" />
               </a>

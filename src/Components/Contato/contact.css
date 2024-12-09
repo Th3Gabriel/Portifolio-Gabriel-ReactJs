@@ -7,6 +7,8 @@
   background-color: #030712; /* Cor de fundo */
   color: #fff; /* Cor do texto */
   text-align: center; /* Alinha texto ao centro */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
 }
 
 .contact-label {
@@ -30,8 +32,52 @@
 
 .contact {
   display: flex;
-  align-items: center; /* Alinha o conteúdo verticalmente */
-  gap: 0.5rem; /* Espaçamento entre os ícones e o texto */
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-wrapper {
+  position: relative; /* Necessário para posicionar o tooltip */
+  cursor: pointer; /* Aponta que é clicável */
+}
+
+.tooltip {
+  position: absolute;
+  top: 50%; /* Alinha verticalmente no meio do ícone */
+  left: 110%; /* Posiciona à direita do ícone */
+  transform: translateY(-50%); /* Centraliza verticalmente */
+  background-color: #333; /* Fundo do tooltip */
+  color: #fff; /* Cor do texto */
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0; /* Tooltip invisível por padrão */
+  visibility: hidden; /* Evita que interfira no layout quando oculto */
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+  z-index: 10; /* Garantir que apareça acima dos outros elementos */
+}
+
+.icon-wrapper:hover .tooltip {
+  opacity: 1; /* Torna o tooltip visível */
+  visibility: visible;
+}
+
+.icon-wrapper img {
+  width: 24px; /* Ajusta o tamanho do ícone */
+  height: 24px;
+}
+
+.contact-infos img {
+  width: 24px; /* Ajusta o tamanho dos ícones */
+  height: 24px;
+}
+
+.contact-infos p {
+  font-size: 1rem; /* Ajusta o tamanho do texto */
+  font-weight: 400; /* Define o peso da fonte */
 }
 
 .contact-minimal-infos {
@@ -42,4 +88,14 @@
   display: flex;
   justify-content: center; /* Centraliza os ícones sociais */
   gap: 1rem; /* Espaçamento entre os ícones */
+}
+
+.contact-minsocial img {
+  width: 32px; /* Ajusta o tamanho dos ícones sociais */
+  height: 32px;
+  transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+.contact-minsocial img:hover {
+  transform: scale(1.1); /* Aumenta levemente o ícone ao passar o mouse */
 }
