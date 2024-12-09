@@ -40,10 +40,10 @@ function Header() {
           <ul>
             <div className="divisor mobile-menu"></div>
             <li>
-              <Link to="/">SOBRE</Link>
+              <Link to="/#about">SOBRE</Link>
             </li>
             <li>
-              <Link to="/Projects">PROJETOS</Link>
+              <Link to="/About">PROJETOS</Link>
             </li>
             <li>
               <Link to="/Contact">CONTATO</Link>

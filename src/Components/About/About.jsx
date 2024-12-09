@@ -2,10 +2,10 @@ import './About.css'
 import Label from '../Label/Label'
 import Perfil from '../../assets/Photos/Photo-Gabriel.jpg'
 
-function Footer() {
+function About() {
   return (
     <div className="about-container">
-      <div className="about-label">
+      <div className="about-label" id="about">
         <Label>Sobre Mim</Label>
       </div>
       <div className="about-row">
@@ -13,7 +13,9 @@ function Footer() {
           <img src={Perfil} alt="" />
         </div>
         <div className="about-column about-text-column">
-          <h1 className="about-text-title">OLÁ, ME CHAMO GABRIEL</h1>
+          <h1 className="about-text-title">
+            Curioso sobre mim? Aqui está um pouco sobre mim
+          </h1>
           <div className="about-text-description">
             <p>
               Olá, sou Gabriel Martins! Sou um desenvolvedor web apaixonado por
@@ -74,4 +76,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default About

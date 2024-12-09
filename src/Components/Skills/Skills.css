@@ -1,0 +1,76 @@
+.skills-container {
+  display: flex;
+  flex-direction: column; /* Define o layout como uma coluna */
+  padding: 2rem 5rem; /* Espaçamento interno */
+  background-color: #030712; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+}
+
+.skills-label {
+  margin: 0 auto; /* Centraliza horizontalmente */
+  margin-bottom: 3.125rem; /* Espaçamento inferior (50px convertido para rem) */
+  text-align: center; /* Alinha o texto ao centro */
+  display: block; /* Garante que o elemento seja tratado como um bloco */
+}
+
+.skills-description {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1rem;
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+
+.skills-devicons {
+  display: grid; /* Layout baseado em grid */
+  grid-template-columns: repeat(5, 1fr); /* Define 5 colunas */
+  gap: 2rem; /* Espaçamento entre os itens */
+  padding: 2rem 5rem; /* Espaçamento interno */
+}
+
+.Icons {
+  display: flex;
+  flex-direction: column; /* Organiza imagem e texto em coluna */
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+}
+
+.Icons img {
+  width: 64px; /* Define o tamanho da imagem */
+  margin-bottom: 0.5rem; /* Espaçamento entre imagem e texto */
+}
+
+.Icons p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0; /* Remove margens externas indesejadas */
+}
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+  .skills-container {
+    padding: 1rem; /* Reduz o padding para telas menores */
+  }
+
+  .skills-devicons {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Altera para 2 colunas em telas menores */
+    gap: 1rem; /* Reduz o espaço entre os itens */
+  }
+
+  .Icons img {
+    width: 48px; /* Reduz o tamanho da imagem */
+  }
+
+  .Icons p {
+    font-size: 14px; /* Reduz o tamanho da fonte */
+  }
+
+  .skills-description {
+    font-size: 16px; /* Reduz o tamanho da descrição */
+    margin-bottom: 2rem; /* Reduz o espaçamento inferior */
+  }
+}
