@@ -157,7 +157,6 @@ nav a {
   }
 
   .divisor {
-    display: inline-block;
     width: 0.125rem;
     height: 100%;
     margin: 0 0.625rem;

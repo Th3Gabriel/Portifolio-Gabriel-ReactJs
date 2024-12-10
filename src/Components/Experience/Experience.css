@@ -1,0 +1,70 @@
+.exp-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  padding: 1rem 2rem; /* Reduzido para telas menores */
+  background-color: #111827;
+  color: #fff;
+  min-height: 100vh; /* Garante que ocupe toda a altura da tela */
+  gap: 2rem; /* Espaçamento entre os elementos filhos */
+}
+
+.exp-func ul {
+  list-style-type: disc; /* Marcadores padrão */
+  padding-left: 1.5rem; /* Espaçamento à esquerda para os marcadores */
+  margin: 0; /* Remove margens padrão */
+  display: block; /* Garante que os itens estejam em blocos */
+}
+
+.exp-func li {
+  margin-bottom: 1rem; /* Espaçamento entre os itens */
+  font-size: 1rem; /* Tamanho da fonte responsivo */
+  line-height: 1.5rem; /* Altura da linha */
+  display: list-item; /* Força o comportamento padrão de item de lista */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.exp-periodo p {
+  font-size: 1rem; /* Tamanho da fonte responsivo */
+  line-height: 1.5rem;
+}
+
+.exp-logo img {
+  max-width: 100%; /* Adapta a largura da imagem ao container */
+  height: auto; /* Mantém a proporção */
+}
+
+@media (max-width: 768px) {
+  .exp-Container {
+    padding: 1rem; /* Reduz padding em telas menores */
+  }
+
+  .Card {
+    padding: 1rem; /* Reduz o padding para telas menores */
+  }
+
+  .exp-func li {
+    font-size: 0.9rem; /* Tamanho da fonte menor */
+    line-height: 1.4rem;
+  }
+
+  .exp-periodo p {
+    font-size: 0.9rem; /* Ajuste no tamanho da fonte */
+  }
+}
+
+@media (max-width: 480px) {
+  .exp-Container {
+    gap: 1rem; /* Reduz o espaçamento entre os elementos */
+  }
+
+  .exp-func li {
+    font-size: 0.8rem; /* Fonte menor para telas pequenas */
+    line-height: 1.3rem;
+  }
+
+  .exp-periodo p {
+    font-size: 0.8rem; /* Ajuste ainda menor no tamanho da fonte */
+  }
+}
