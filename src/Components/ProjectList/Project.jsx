@@ -1,3 +1,4 @@
+import React from 'react'
 import CardComponent from '../CardComponent/CardComponent'
 import Port from '../../assets/Photos/Photo-PortifolioGabriel.jpeg'
 import GM from '../../assets/Icons/Icom-Gm-White.svg'
@@ -15,16 +16,14 @@ function ProjectList() {
         <p>Alguns dos projetos que construí</p>
       </div>
       <div className="project-list">
-        <CardComponent>
+        <div className="project-card">
           <img src={Port} alt="Project Thumbnail" className="project-photo" />
           <div className="project-info">
-            <h3 className="project-name">Portifolio|Gabriel</h3>
+            <h3 className="project-name">Portifolio | Gabriel</h3>
             <p className="project-description">
               Este portfólio foi desenvolvido com o propósito de apresentar meu
               trabalho de forma profissional e prática, permitindo que eu mostre
-              todo o meu conhecimento aplicado nas tecnologias que domino. Cada
-              detalhe foi pensado para refletir minha experiência e dedicação,
-              consolidando meu aprendizado em projetos reais.
+              todo o meu conhecimento aplicado nas tecnologias que domino.
             </p>
             <div className="project-footer">
               <span className="skills">React, CSS, JavaScript</span>
@@ -38,9 +37,9 @@ function ProjectList() {
               </a>
             </div>
           </div>
-        </CardComponent>
+        </div>
 
-        <CardComponent>
+        <div className="project-card">
           <img src={GM} alt="Project Thumbnail" className="project-photo" />
           <div className="project-info">
             <h3 className="project-name">Projeto 1</h3>
@@ -59,8 +58,9 @@ function ProjectList() {
               </a>
             </div>
           </div>
-        </CardComponent>
-        {/* Repita os cards conforme necessário */}
+        </div>
+
+        {/* Adicione mais cards conforme necessário */}
       </div>
     </div>
   )

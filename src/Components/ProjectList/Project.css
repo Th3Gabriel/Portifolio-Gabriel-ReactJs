@@ -3,6 +3,7 @@
   flex-direction: column;
   background-color: #030712; /* Cor de fundo */
   gap: 1rem;
+  padding: 1rem;
 }
 
 .project-list {
@@ -12,6 +13,21 @@
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+.project-card {
+  background-color: #1e293b; /* Fundo do card */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilos para os elementos dentro do card */
@@ -81,6 +97,7 @@
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .project-list {
     grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 }
 
@@ -88,21 +105,40 @@
 @media screen and (max-width: 768px) and (min-width: 576px) {
   .project-list {
     grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 }
 
 /* Celulares pequenos (abaixo de 576px) */
 @media screen and (max-width: 576px) {
   .project-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Apenas uma coluna */
+    gap: 10px;
+  }
+  .project-card {
+    max-width: 95%; /* Card mais compacto */
+    margin: 0 auto; /* Centraliza o card */
+    padding: 10px; /* Reduz espaço interno */
+  }
+  .project-photo {
+    height: auto;
+    border-radius: 8px;
+  }
+  .project-info {
+    padding: 10px; /* Menor padding */
   }
   .project-name {
-    font-size: 18px;
+    font-size: 16px; /* Fonte menor */
   }
   .project-description {
-    font-size: 14px;
+    font-size: 14px; /* Fonte menor */
+    line-height: 1.5;
   }
   .skills {
+    font-size: 12px; /* Fonte menor */
+  }
+  .project-link {
     font-size: 12px;
+    padding: 6px 10px; /* Botão mais compacto */
   }
 }
