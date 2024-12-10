@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './contact.css'
 import Label from '../Label/Label'
 import IconCopiar from '../../assets/Icons/Icon-copy.svg'

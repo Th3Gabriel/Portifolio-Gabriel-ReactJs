@@ -7,7 +7,6 @@
   background-color: #030712; /* Cor de fundo */
   color: #fff; /* Cor do texto */
   text-align: center; /* Alinha texto ao centro */
-  border-radius: 8px; /* Bordas arredondadas */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
 }
 

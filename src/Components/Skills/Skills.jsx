@@ -6,6 +6,7 @@ import sql from '../../assets/DevIcons/Devicon-mysql.svg'
 import React from '../../assets/DevIcons/Devicon-ReactJs.svg'
 import TypeScript from '../../assets/DevIcons/Devicon-Typescript.svg'
 import css from '../../assets/DevIcons/Devicon-css.svg'
+import Docker from '../../assets/DevIcons/Devicon-docker.svg'
 
 function Skills() {
   return (
@@ -42,6 +43,10 @@ function Skills() {
         <div className="Icons">
           <img src={Git} alt="DevIcon Git" />
           <p>GIT</p>
+        </div>
+        <div className="Icons">
+          <img src={Docker} alt="DevIcon Docker" />
+          <p>DOCKER</p>
         </div>
       </div>
     </div>
