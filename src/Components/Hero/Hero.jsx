@@ -9,7 +9,7 @@ import './Hero.css'
 
 function Hero() {
   return (
-    <div className="hero-container">
+    <div className="container">
       <div className="hero-row">
         {/* Coluna do texto */}
         <div className="hero-column hero-text-column">

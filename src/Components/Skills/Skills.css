@@ -1,11 +1,3 @@
-.skills-container {
-  display: flex;
-  flex-direction: column; /* Define o layout como uma coluna */
-  padding: 2rem 5rem; /* Espaçamento interno */
-  background-color: #030712; /* Cor de fundo */
-  color: #fff; /* Cor do texto */
-}
-
 .skills-label {
   margin: 0 auto; /* Centraliza horizontalmente */
   margin-bottom: 3.125rem; /* Espaçamento inferior (50px convertido para rem) */

@@ -4,6 +4,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 5rem; /* Espaçamento interno */
+  background-color: #030712; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+}
+
 h1 {
   font-size: 60px;
   line-height: 72px;

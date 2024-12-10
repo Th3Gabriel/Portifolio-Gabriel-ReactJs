@@ -4,7 +4,7 @@ import Perfil from '../../assets/Photos/Photo-Gabriel.jpg'
 
 function About() {
   return (
-    <div className="about-container">
+    <div className="container about-container">
       <div className="about-label" id="about">
         <Label>Sobre Mim</Label>
       </div>
