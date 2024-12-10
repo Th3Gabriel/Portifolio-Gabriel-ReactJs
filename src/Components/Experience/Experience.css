@@ -35,36 +35,96 @@
   height: auto; /* Mantém a proporção */
 }
 
-@media (max-width: 768px) {
+/* Breakpoints responsivos */
+@media (max-width: 1200px) {
+  /* Large devices */
   .exp-Container {
-    padding: 1rem; /* Reduz padding em telas menores */
+    padding: 2rem;
   }
 
   .Card {
-    padding: 1rem; /* Reduz o padding para telas menores */
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Medium devices (tablets) */
+  .exp-Container {
+    padding: 1.5rem;
+  }
+
+  .Card {
+    padding: 1rem;
   }
 
   .exp-func li {
-    font-size: 0.9rem; /* Tamanho da fonte menor */
+    font-size: 0.95rem; /* Fonte menor */
     line-height: 1.4rem;
   }
 
   .exp-periodo p {
-    font-size: 0.9rem; /* Ajuste no tamanho da fonte */
+    font-size: 0.95rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  /* Small devices (landscape phones, tablets) */
   .exp-Container {
-    gap: 1rem; /* Reduz o espaçamento entre os elementos */
+    padding: 1rem;
+  }
+
+  .Card {
+    padding: 1rem;
   }
 
   .exp-func li {
-    font-size: 0.8rem; /* Fonte menor para telas pequenas */
+    font-size: 0.9rem;
     line-height: 1.3rem;
   }
 
   .exp-periodo p {
-    font-size: 0.8rem; /* Ajuste ainda menor no tamanho da fonte */
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Extra small devices (portrait phones) */
+  .exp-Container {
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+
+  .Card {
+    padding: 0.8rem;
+  }
+
+  .exp-func li {
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+  }
+
+  .exp-periodo p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 360px) {
+  /* Extra tiny devices */
+  .exp-Container {
+    padding: 0.5rem;
+    gap: 0.8rem;
+  }
+
+  .Card {
+    padding: 0.6rem;
+  }
+
+  .exp-func li {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+
+  .exp-periodo p {
+    font-size: 0.8rem;
   }
 }
