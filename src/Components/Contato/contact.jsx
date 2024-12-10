@@ -33,7 +33,7 @@ function Contact() {
 
   return (
     <div className="contact-container">
-      <div className="contact-label">
+      <div className="label" id="contact">
         <Label>Entre em contato</Label>
       </div>
       <div className="contact-coluna">

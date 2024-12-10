@@ -33,6 +33,27 @@ nav a {
   color: #fff;
   font-weight: 600;
   font-size: 1rem;
+  position: relative; /* Necessário para o efeito */
+  transition: color 0.3s ease; /* Transição para mudar a cor */
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Espaçamento entre o texto e a linha */
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease; /* Transição para a largura da linha */
+}
+
+nav a:hover {
+  color: #d1d5db; /* Cor do texto ao passar o mouse */
+}
+
+nav a:hover::after {
+  width: 100%; /* A linha ocupa 100% da largura ao passar o mouse */
 }
 
 .mobile-menu {

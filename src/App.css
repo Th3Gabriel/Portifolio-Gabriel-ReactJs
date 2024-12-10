@@ -2,7 +2,7 @@
   font-family: 'IBM Plex Mono', monospace;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Inclui padding no tamanho total */
 }
 
 .container {
@@ -11,6 +11,24 @@
   padding: 1rem 5rem; /* Espaçamento interno */
   background-color: #030712; /* Cor de fundo */
   color: #fff; /* Cor do texto */
+  overflow-x: hidden;
+}
+
+.legend {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.label {
+  margin: 0 auto; /* Centraliza horizontalmente */
+  margin-bottom: 2rem; /* Espaçamento inferior (50px convertido para rem) */
+  text-align: center; /* Alinha o texto ao centro */
+  display: block; /* Garante que o elemento seja tratado como um bloco */
+  color: #fff;
 }
 
 h1 {

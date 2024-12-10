@@ -10,11 +10,6 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
 }
 
-.contact-label {
-  margin-bottom: 3.125rem; /* Espaçamento inferior */
-  text-align: center; /* Alinha o texto ao centro */
-}
-
 .contact-description {
   max-width: 600px; /* Define um limite de largura para quebrar o texto */
   margin-bottom: 2rem; /* Espaçamento inferior */

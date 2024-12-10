@@ -23,6 +23,7 @@
 
 .hero-description {
   color: #aaa; /* Texto com contraste menor */
+  font-size: 20px;
 }
 
 .hero-image-container {
@@ -68,6 +69,7 @@
     order: 1; /* Garante que o texto fique abaixo */
     width: 100%; /* O texto ocupa toda a largura */
     text-align: justify; /* Centraliza o texto */
+    font-size: 9px;
   }
 
   .hero-text {

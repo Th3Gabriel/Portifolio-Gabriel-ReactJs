@@ -8,10 +8,10 @@ function Experience() {
   return (
     <>
       <div className="exp-Container">
-        <div className="skills-label">
+        <div className="label">
           <Label>Experiencias</Label>
         </div>
-        <div className="skills-description">
+        <div className="legend">
           <p>
             Aqui está um rápido resumo das minhas experiências mais recentes
           </p>

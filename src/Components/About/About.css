@@ -3,13 +3,6 @@
   color: #fff; /* Cor do texto */
 }
 
-.about-label {
-  margin: 0 auto; /* Centraliza horizontalmente */
-  margin-bottom: 3.125rem; /* Espaçamento inferior (50px convertido para rem) */
-  text-align: center; /* Alinha o texto ao centro */
-  display: block; /* Garante que o elemento seja tratado como um bloco */
-}
-
 .about-row {
   display: flex;
   flex-direction: row; /* Define o layout como uma linha */

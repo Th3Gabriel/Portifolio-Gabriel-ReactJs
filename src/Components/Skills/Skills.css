@@ -1,18 +1,3 @@
-.skills-label {
-  margin: 0 auto; /* Centraliza horizontalmente */
-  margin-bottom: 3.125rem; /* Espaçamento inferior (50px convertido para rem) */
-  text-align: center; /* Alinha o texto ao centro */
-  display: block; /* Garante que o elemento seja tratado como um bloco */
-}
-
-.skills-description {
-  text-align: center;
-  font-size: 18px;
-  line-height: 1rem;
-  font-weight: 600;
-  margin-bottom: 100px;
-}
-
 .skills-devicons {
   display: grid; /* Layout baseado em grid */
   grid-template-columns: repeat(5, 1fr); /* Define 5 colunas */
@@ -59,10 +44,5 @@
 
   .Icons p {
     font-size: 14px; /* Reduz o tamanho da fonte */
-  }
-
-  .skills-description {
-    font-size: 16px; /* Reduz o tamanho da descrição */
-    margin-bottom: 2rem; /* Reduz o espaçamento inferior */
   }
 }

@@ -1,0 +1,108 @@
+.project-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #030712; /* Cor de fundo */
+  gap: 1rem;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Estilos para os elementos dentro do card */
+.project-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px 8px 0 0; /* Bordas arredondadas no topo */
+}
+
+.project-info {
+  padding: 15px;
+}
+
+.project-name {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.project-description {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.project-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.project-link {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.project-link:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsividade */
+
+/* Dispositivos muito grandes (acima de 1440px) */
+@media screen and (min-width: 1440px) {
+  .project-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Dispositivos grandes (entre 1024px e 1440px) */
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+  .project-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablets (entre 768px e 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Celulares grandes (entre 576px e 768px) */
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Celulares pequenos (abaixo de 576px) */
+@media screen and (max-width: 576px) {
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+  .project-name {
+    font-size: 18px;
+  }
+  .project-description {
+    font-size: 14px;
+  }
+  .skills {
+    font-size: 12px;
+  }
+}

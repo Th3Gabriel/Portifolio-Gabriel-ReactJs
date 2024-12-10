@@ -11,10 +11,10 @@ import Docker from '../../assets/DevIcons/Devicon-docker.svg'
 function Skills() {
   return (
     <div className="container">
-      <div className="skills-label">
+      <div className="label" id="skills">
         <Label>Skills</Label>
       </div>
-      <div className="skills-description">
+      <div className="legend">
         <p>
           As habilidades, ferramentas e tecnologias nas quais sou realmente bom
         </p>

@@ -1,6 +1,5 @@
 import './Header.css'
 import GM from '../../assets/Icons/Icom-Gm-White.svg'
-import { Link } from 'react-router'
 import Button from '../Button/Button'
 import { useState } from 'react'
 
@@ -10,9 +9,9 @@ function Header() {
     window.open(url, '_blank')
   }
 
-  const [isOpen, SetisOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
   const toggleMenu = () => {
-    SetisOpen(!isOpen)
+    setIsOpen(!isOpen)
   }
 
   return (
@@ -40,13 +39,16 @@ function Header() {
           </div>
           <ul>
             <li>
-              <Link to="/#about">SOBRE</Link>
+              <a href="#about">SOBRE</a>
             </li>
             <li>
-              <Link to="/About">PROJETOS</Link>
+              <a href="#projects">PROJETOS</a>
             </li>
             <li>
-              <Link to="/Contact">CONTATO</Link>
+              <a href="#skills">SKILLS</a>
+            </li>
+            <li>
+              <a href="#contact">CONTATO</a>
             </li>
           </ul>
           <Button buttonStyle="black" onClick={Download}>
