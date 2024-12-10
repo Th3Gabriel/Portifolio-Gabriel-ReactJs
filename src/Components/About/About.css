@@ -43,7 +43,7 @@
   display: flex;
   flex-direction: column; /* Define o layout como uma coluna */
   justify-content: center; /* Alinha os itens verticalmente ao centro */
-  padding: 1rem; /* Espaçamento interno */
+  padding: 2rem; /* Espaçamento interno */
 }
 
 .about-text-title {
@@ -52,7 +52,8 @@
 }
 
 .about-text-description {
-  font-size: 1.125rem; /* Tamanho da fonte da descrição */
+  font-size: 20px; /* Tamanho da fonte da descrição */
+  text-align: justify;
 }
 
 /* Estilos responsivos para telas com largura de até 768px */
@@ -81,7 +82,8 @@
   }
 
   .about-text-description {
-    font-size: 12px; /* Reduz o tamanho da fonte da descrição */
+    font-size: 10px; /* Reduz o tamanho da fonte da descrição */
+    text-align: justify;
   }
 
   .about-image-container img {

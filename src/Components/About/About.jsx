@@ -18,56 +18,37 @@ function About() {
           </h1>
           <div className="about-text-description">
             <p>
-              Olá, sou Gabriel Martins! Sou um desenvolvedor web apaixonado por
-              criar experiências digitais que encantam os usuários. Com formação
-              em Ciência da Computação, expertise em React.js e TypeScript, meu
-              foco é unir criatividade e tecnologia para transformar ideias em
-              soluções práticas e impactantes.
+              Olá, sou Gabriel Martins, desenvolvedor web apaixonado por criar
+              experiências digitais que encantam. Com formação em Ciência da
+              Computação e expertise em React.js e TypeScript, transformo ideias
+              em soluções práticas e impactantes.
             </p>
             <br />
             <p>
-              Minha jornada no desenvolvimento começou em 2023, e desde então,
-              venho trabalhando em projetos que desafiam meus limites. Ao longo
-              do caminho, tenho aprimorado minhas habilidades em criar
-              interfaces amigáveis e escrever códigos limpos e eficientes.
+              Desde 2023, venho desenvolvendo projetos desafiadores, aprimorando
+              habilidades em interfaces amigáveis e códigos eficientes. Meu
+              objetivo é tornar o digital mais humano, focando em psicologia do
+              usuário, experiências inclusivas e produtos completos.
             </p>
             <br />
-            <p>
-              Meu objetivo é simples: tornar o digital mais humano. Sou
-              fascinado por entender a psicologia do usuário, projetar
-              experiências inclusivas e desenvolver produtos completos — desde a
-              concepção inicial até a entrega final.
-            </p>
-            <br />
-            <p>Minhas especialidades:</p>
-            <br />
+            <p>Especialidades:</p>
             <ul>
-              <li>
-                Desenvolvimento Front-End: React.js, TypeScript, HTML, CSS
-              </li>
-              <li>Desenvolvimento Back-End: Node.js, APIs REST</li>
-              <li>Criação de interfaces intuitivas e acessíveis</li>
+              <li>Front-End: React.js, TypeScript, HTML, CSS</li>
+              <li>Back-End: Node.js, APIs REST</li>
+              <li>Interfaces intuitivas e acessíveis</li>
             </ul>
             <br />
             <p>Objetivos de Carreira:</p>
-            <br />
             <ul>
-              <li>Tornar-me um Engenheiro de Software</li>
-              <li>Expandir para Desenvolvimento Mobile</li>
-              <li>
-                Aperfeiçoar minhas habilidades em Desenvolvimento Front-End
-              </li>
+              <li>Engenharia de Software</li>
+              <li>Desenvolvimento Mobile</li>
+              <li>Especialização em Front-End</li>
             </ul>
             <br />
             <p>
-              Atualmente, estou evoluindo minhas habilidades em React e
-              TypeScript para criar projetos ainda mais robustos e inovadores.
-            </p>
-            <br />
-            <p>
-              Disponível para trabalhos freelancers! Se você tem uma ideia
-              incrível e precisa de ajuda para torná-la realidade, entre em
-              contato. Será um prazer colaborar com você🚀
+              Atualmente, estou evoluindo em React e TypeScript e disponível
+              para projetos freelancers. Vamos transformar sua ideia em
+              realidade! 🚀
             </p>
           </div>
         </div>
