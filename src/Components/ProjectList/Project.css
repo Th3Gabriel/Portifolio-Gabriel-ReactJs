@@ -64,19 +64,13 @@
 }
 
 .project-link {
-  background-color: #2563eb;
-  color: #ffffff;
-  padding: 8px 12px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-size: 14px;
-  transition: background-color 0.2s ease;
+  text-decoration: none !important;
+  color: #030712;
 }
-
 .project-link:hover {
-  background-color: #1d4ed8;
+  text-decoration: none !important;
+  color: #fff;
 }
-
 /* Responsividade */
 
 /* Dispositivos muito grandes (acima de 1440px) */

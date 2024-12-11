@@ -1,8 +1,6 @@
-import React from 'react'
-import CardComponent from '../CardComponent/CardComponent'
 import Port from '../../assets/Photos/Photo-PortifolioGabriel.jpeg'
 import GM from '../../assets/Icons/Icom-Gm-White.svg'
-
+import Button from '../Button/Button'
 import './Project.css'
 import Label from '../Label/Label'
 
@@ -27,19 +25,21 @@ function ProjectList() {
             </p>
             <div className="project-footer">
               <span className="skills">React, CSS, JavaScript</span>
-              <a
-                href="https://github.com/Th3Gabriel/Portifolio-Gabriel-ReactJs"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link"
-              >
-                Ver no GitHub
-              </a>
+              <Button buttonStyle="black">
+                <a
+                  href="https://github.com/Th3Gabriel/Portifolio-Gabriel-ReactJs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+                  Ver no GitHub
+                </a>
+              </Button>
             </div>
           </div>
         </div>
 
-        <div className="project-card">
+        <div className="project-card" hidden>
           <img src={GM} alt="Project Thumbnail" className="project-photo" />
           <div className="project-info">
             <h3 className="project-name">Projeto 1</h3>
@@ -48,14 +48,7 @@ function ProjectList() {
             </p>
             <div className="project-footer">
               <span className="skills">React, CSS, JavaScript</span>
-              <a
-                href="https://github.com/seu-usuario/projeto1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link"
-              >
-                Ver no GitHub
-              </a>
+              <Button buttonStyle="black">Ver no GitHub</Button>
             </div>
           </div>
         </div>
