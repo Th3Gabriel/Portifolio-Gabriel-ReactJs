@@ -1,20 +1,35 @@
+.skills {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #030712;
+  transition: color 0.2s ease;
+}
+
+.project-link:hover {
+  color: #fff;
+}
+
 .skills-devicons {
-  display: grid; /* Layout baseado em grid */
-  grid-template-columns: repeat(5, 1fr); /* Define 5 colunas */
-  gap: 2rem; /* Espaçamento entre os itens */
-  padding: 2rem 5rem; /* Espaçamento interno */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  padding: 2rem 5rem;
 }
 
 .Icons {
   display: flex;
-  flex-direction: column; /* Organiza imagem e texto em coluna */
-  align-items: center; /* Centraliza horizontalmente */
-  justify-content: center; /* Centraliza verticalmente */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .Icons img {
-  width: 64px; /* Define o tamanho da imagem */
-  margin-bottom: 0.5rem; /* Espaçamento entre imagem e texto */
+  width: 64px;
+  margin-bottom: 0.5rem;
 }
 
 .Icons p {
@@ -22,28 +37,88 @@
   color: #fff;
   font-weight: 600;
   font-size: 18px;
-  margin: 0; /* Remove margens externas indesejadas */
+  margin: 0;
 }
 
-/* Responsividade para telas menores que 768px */
-@media (max-width: 768px) {
-  .skills-container {
-    padding: 1rem; /* Reduz o padding para telas menores */
+/* Responsividade */
+@media screen and (min-width: 1440px) {
+  .project-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+  .project-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 
   .skills-devicons {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* Altera para 2 colunas em telas menores */
-    gap: 1rem; /* Reduz o espaço entre os itens */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 
   .Icons img {
-    width: 48px; /* Reduz o tamanho da imagem */
+    width: 48px;
   }
 
   .Icons p {
-    font-size: 14px; /* Reduz o tamanho da fonte */
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .project-card {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .project-info {
+    padding: 10px;
+  }
+  .project-name {
+    font-size: 16px;
+  }
+  .project-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .skills {
+    font-size: 12px;
+  }
+  .project-link {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .skills-devicons {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .Icons img {
+    width: 48px;
+  }
+
+  .Icons p {
+    font-size: 14px;
   }
 }

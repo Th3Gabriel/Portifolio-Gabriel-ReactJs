@@ -3,16 +3,16 @@
   flex-wrap: wrap;
   gap: 2rem;
   align-items: center;
-  justify-content: space-between; /* Alinha texto e imagem */
+  justify-content: space-between;
 }
 
 .hero-column {
   flex: 1;
-  min-width: 18.75rem; /* 300px convertido para rem */
+  min-width: 18.75rem;
 }
 
 .hero-text-column {
-  text-align: left; /* Texto alinhado à esquerda */
+  text-align: left;
 }
 
 .hero-text {
@@ -23,7 +23,7 @@
 }
 
 .hero-description {
-  color: #aaa; /* Texto com contraste menor */
+  color: #aaa;
   font-size: 20px;
 }
 
@@ -31,57 +31,57 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25rem; /* 400px convertido para rem */
-  border-radius: 0.5rem; /* 8px convertido para rem */
+  height: 25rem;
+  border-radius: 0.5rem;
 }
 
 .hero-image-container img {
   max-width: 90%;
   max-height: 90%;
   object-fit: contain;
-  border-radius: 0.5rem; /* Estilo consistente */
+  border-radius: 0.5rem;
 }
 
 .hero-location {
-  margin-top: 3rem; /* 50px convertido para rem */
+  margin-top: 3rem;
 }
 
 .hero-social-midia {
-  margin-top: 3.125rem; /* 50px convertido para rem */
+  margin-top: 3.125rem;
 }
 
-/* Responsividade para dispositivos com largura máxima de 768px */
-@media (max-width: 48rem) {
+/* Responsividade */
+@media screen and (max-width: 48rem) {
   .container {
-    padding: 1rem 2rem; /* Reduz o padding */
+    padding: 1rem 2rem;
   }
 
   .hero-row {
-    flex-direction: column; /* Empilha os elementos verticalmente */
+    flex-direction: column;
   }
 
   .hero-image-container {
-    order: -1; /* Move a imagem para o topo */
-    width: 100%; /* Garante que a imagem ocupe toda a largura */
-    margin-bottom: 1.5rem; /* Espaçamento abaixo da imagem */
+    order: -1;
+    width: 100%;
+    margin-bottom: 1.5rem;
   }
 
   .hero-text-column {
-    order: 1; /* Garante que o texto fique abaixo */
-    width: 100%; /* O texto ocupa toda a largura */
-    text-align: justify; /* Centraliza o texto */
-    font-size: 9px;
+    order: 1;
+    width: 100%;
+    text-align: justify;
   }
 
   .hero-text {
-    font-size: 1.5rem; /* Reduz o tamanho do texto principal */
+    font-size: 1.5rem;
   }
+
   .hero-text img {
     width: 40px !important;
   }
 
   .hero-location,
   .hero-social-midia {
-    margin-top: 2rem; /* Ajusta o espaçamento superior */
+    margin-top: 2rem;
   }
 }

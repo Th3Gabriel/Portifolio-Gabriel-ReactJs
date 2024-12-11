@@ -1,7 +1,7 @@
 .project-container {
   display: flex;
   flex-direction: column;
-  background-color: #030712; /* Cor de fundo */
+  background-color: #030712;
   gap: 1rem;
   padding: 1rem;
 }
@@ -16,7 +16,7 @@
 }
 
 .project-card {
-  background-color: #1e293b; /* Fundo do card */
+  background-color: #1e293b;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -30,12 +30,10 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos para os elementos dentro do card */
 .project-photo {
   width: 100%;
-  height: auto;
   display: block;
-  border-radius: 8px 8px 0 0; /* Bordas arredondadas no topo */
+  border-radius: 8px 8px 0 0;
 }
 
 .project-info {
@@ -65,75 +63,60 @@
 }
 
 .project-link {
-  text-decoration: none !important;
+  text-decoration: none;
   color: #030712;
+  transition: color 0.2s ease;
 }
+
 .project-link:hover {
-  text-decoration: none !important;
   color: #fff;
 }
-/* Responsividade */
 
-/* Dispositivos muito grandes (acima de 1440px) */
+/* Responsividade */
 @media screen and (min-width: 1440px) {
   .project-list {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-/* Dispositivos grandes (entre 1024px e 1440px) */
 @media screen and (max-width: 1440px) and (min-width: 1024px) {
   .project-list {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* Tablets (entre 768px e 1024px) */
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1024px) {
   .project-list {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
 }
 
-/* Celulares grandes (entre 576px e 768px) */
-@media screen and (max-width: 768px) and (min-width: 576px) {
-  .project-list {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-}
-
-/* Celulares pequenos (abaixo de 576px) */
 @media screen and (max-width: 576px) {
   .project-list {
-    grid-template-columns: 1fr; /* Apenas uma coluna */
+    grid-template-columns: 1fr;
     gap: 10px;
   }
   .project-card {
-    max-width: 95%; /* Card mais compacto */
-    margin: 0 auto; /* Centraliza o card */
-    padding: 10px; /* Reduz espaço interno */
-  }
-  .project-photo {
-    height: auto;
-    border-radius: 8px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 10px;
   }
   .project-info {
-    padding: 10px; /* Menor padding */
+    padding: 10px;
   }
   .project-name {
-    font-size: 16px; /* Fonte menor */
+    font-size: 16px;
   }
   .project-description {
-    font-size: 14px; /* Fonte menor */
+    font-size: 14px;
     line-height: 1.5;
   }
   .skills {
-    font-size: 12px; /* Fonte menor */
+    font-size: 12px;
   }
   .project-link {
     font-size: 12px;
-    padding: 6px 10px; /* Botão mais compacto */
+    padding: 6px 10px;
   }
 }
