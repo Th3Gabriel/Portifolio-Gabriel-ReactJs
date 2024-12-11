@@ -91,7 +91,6 @@ nav a:hover::after {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    border-bottom: 1px solid #1f2937;
     padding: 1rem; /* Ajuste de espaçamento */
   }
 

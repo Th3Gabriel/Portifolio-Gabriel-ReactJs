@@ -1,11 +1,13 @@
 import './Header.css'
 import GM from '../../assets/Icons/Icom-Gm-White.svg'
+import Menu from '../../assets/Icons/Icon-Menu.svg'
 import Button from '../Button/Button'
 import { useState } from 'react'
 
 function Header() {
   const Download = () => {
-    const url = 'https://www.google.com.br'
+    const url =
+      'https://drive.google.com/file/d/1N1v_n4UOaRkM0BZ_uBj4Y1tcRsHhvNLi/view?usp=sharing'
     window.open(url, '_blank')
   }
 
@@ -21,7 +23,7 @@ function Header() {
 
         <div className="mobile-menu">
           <Button buttonStyle="secondary" onClick={toggleMenu}>
-            ☰
+            <img src={Menu} alt="Menu Icon" />
           </Button>
         </div>
 
