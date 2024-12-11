@@ -3,7 +3,6 @@ import GitHub from '../../assets/Icons/Icon-GitHub.svg'
 import Linkedin from '../../assets/Icons/Icon-Linkedin.svg'
 import Location from '../../assets/Icons/Icon-Location.svg'
 import Gabriel from '../../assets/Icons/Icon-Gabriel.png'
-import Label from '../Label/Label'
 
 import './Hero.css'
 
