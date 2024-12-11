@@ -10,7 +10,7 @@
   flex-direction: column;
   padding: 1rem 5rem; /* Espaçamento interno */
   background-color: #030712; /* Cor de fundo */
-  color: #fff; /* Cor do texto */
+  overflow-x: hidden;
 }
 
 .legend {
@@ -49,4 +49,5 @@ h3 {
   line-height: 36px;
   letter-spacing: -0.32px;
   font-weight: 600;
+  color: #fff;
 }

@@ -36,6 +36,7 @@ function Hero() {
             style={{
               display: 'flex',
               alignItems: 'center',
+              color: '#fff',
             }}
           >
             <img src={Location} alt="Localização" style={{ marginRight: 8 }} />
