@@ -65,12 +65,29 @@ nav a:hover::after {
     display: flex; /* Exibe o botão de menu móvel */
     justify-content: flex-end;
     align-items: center;
+    width: 100%;
   }
-
   nav.open {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between; /* Garante a separação entre logo e menu */
+    align-items: center;
+    padding: 1rem; /* Ajusta o espaçamento */
+  }
+
+  .mobile-menu img {
+    max-height: 3rem; /* Aumenta o tamanho do ícone de menu */
+    margin-left: auto; /* Alinha o menu à direita */
+    cursor: pointer;
+  }
+
+  .header img {
+    max-height: 3rem; /* Aumenta o tamanho da logo */
+    margin-right: auto; /* Alinha a logo à esquerda */
   }
 
   nav {
@@ -88,15 +105,10 @@ nav a:hover::after {
 
   .mobile-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Ajusta alinhamento para espaçamento entre logo e botão */
     align-items: center;
     width: 100%;
     padding: 1rem; /* Ajuste de espaçamento */
-  }
-
-  .mobile-menu img {
-    max-height: 2.5rem;
-    margin-left: 1rem;
   }
 
   .close-btn {
