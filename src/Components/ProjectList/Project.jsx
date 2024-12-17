@@ -1,6 +1,7 @@
 import React from 'react'
 import Port from '../../assets/Photos/Photo-PortifolioGabriel.jpeg'
 import GM from '../../assets/Icons/Icom-Gm-White.svg'
+import Pokedex from '../../assets/Photos/Photo-Pokex.svg'
 import Button from '../Button/Button'
 import './Project.css'
 import Label from '../Label/Label'
@@ -18,12 +19,13 @@ const projects = [
   },
   {
     id: 2,
-    name: 'Projeto 1',
-    description: 'Este é um breve resumo do projeto 1.',
-    image: GM,
-    skills: 'React, CSS, JavaScript',
-    link: 'https://github.com/Example/Projeto1',
-    hidden: true,
+    name: 'Pokedex',
+    description:
+      'O projeto tem como principal objetivo explorar a Pokémon RESTful API (PokeAPI) para criar uma aplicação interativa que permita aos usuários consultar informações detalhadas sobre os Pokémon.',
+    image: Pokedex,
+    skills: 'React, CSS, JavaScript, API REST',
+    link: 'https://github.com/Th3Gabriel/Pokedex',
+    hidden: false,
   },
 ]
 
