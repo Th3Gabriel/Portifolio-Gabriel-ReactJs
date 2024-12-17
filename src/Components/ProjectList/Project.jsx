@@ -15,6 +15,7 @@ const projects = [
     image: Port,
     skills: 'React, CSS, JavaScript',
     link: 'https://github.com/Th3Gabriel/Portifolio-Gabriel-ReactJs',
+    vercel: false,
     hidden: false,
   },
   {
@@ -25,6 +26,7 @@ const projects = [
     image: Pokedex,
     skills: 'React, CSS, JavaScript, API REST',
     link: 'https://github.com/Th3Gabriel/Pokedex',
+    vercel: 'https://pokedex-two-coral.vercel.app/',
     hidden: false,
   },
 ]
@@ -35,17 +37,17 @@ function ProjectList() {
       <div className="label" id="projects">
         <Label>Projetos</Label>
       </div>
-      <div className="legend" id="projects">
+      <div className="legend">
         <p>Alguns dos projetos que construí</p>
       </div>
       <div className="project-list">
         {projects.map(
-          ({ id, name, description, image, skills, link, hidden }) =>
+          ({ id, name, description, image, skills, link, vercel, hidden }) =>
             !hidden && (
               <div key={id} className="project-card">
                 <img
                   src={image}
-                  alt="Project Thumbnail"
+                  alt={`Projeto ${name}`}
                   className="project-photo"
                 />
                 <div className="project-info">
@@ -63,6 +65,18 @@ function ProjectList() {
                         Ver no GitHub
                       </a>
                     </Button>
+                    {vercel && (
+                      <Button buttonStyle="black">
+                        <a
+                          href={vercel}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="project-link"
+                        >
+                          App Rodando
+                        </a>
+                      </Button>
+                    )}
                   </div>
                 </div>
               </div>

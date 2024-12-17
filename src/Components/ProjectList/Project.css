@@ -55,6 +55,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px; /* Espaçamento entre os botões */
 }
 
 .skills {
@@ -66,6 +67,8 @@
   text-decoration: none;
   color: #030712;
   transition: color 0.2s ease;
+  font-size: 14px;
+  padding: 8px 12px; /* Ajusta padding para os botões */
 }
 
 .project-link:hover {
